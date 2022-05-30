@@ -68,7 +68,19 @@
       });
       view.ui.add(legendExpand, "top-right");
       
+      if (portal.user.role == "org_user"){
       const editor = new Editor({
+        view: view,
+        allowedWorkflows: ["create-features"] // note: 'create' was deprecated as of 4.23
+      });
+      editorExpand = new Expand({
+        //expandIconClass: "...",
+        view: view,
+        content: editor
+      })
+      view.ui.add(editorExpand, "top-right");
+      } else {
+        const editor = new Editor({
         view: view,
       });
       editorExpand = new Expand({
@@ -77,6 +89,7 @@
         content: editor
       })
       view.ui.add(editorExpand, "top-right");
+      }
 
       const layerlist = new LayerList({
         view: view,
@@ -87,7 +100,6 @@
       })
       view.ui.add(layerlistExpand, "top-right");
       
-      if (portal.user.role == "org_admin"){
       const print = new Print({
         view: view,
         // specify a custom Print Service if we so choose
@@ -100,7 +112,6 @@
       })
       view.ui.add(printExpand, "top-right");
       
-        }
       });
   });
   </script>
