@@ -29,32 +29,60 @@
     .esri-collapse__icon.esri-icon-layer-list:before {
       background-image: [];
       content: "Legend";
-      width: 64px;
-      height: 25px;
+      text-align: center;
+      position: relative;
     }
 
-    .esri-collapse__icon.esri-icon-edit,
-    .esri-collapse__icon.esri-icon-edit:before {
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container>div.esri-expand__panel>div>span.esri-collapse__icon.esri-icon-edit,
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container>div.esri-expand__panel>div>span.esri-collapse__icon.esri-icon-edit:before {
       background-image: [];
-      content: "Editor";
-      width: 64px;
-      height: 25px;
+      content: "Create";
+      text-align: center;
+      position: relative;
+    }
+
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container>div.esri-expand__panel>div>span.esri-collapse__icon.esri-icon-edit,
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container>div.esri-expand__panel>div>span.esri-collapse__icon.esri-icon-edit:before {
+      background-image: [];
+      content: "Edit";
+      text-align: center;
+      position: relative;
+    }
+
+    /*snapping*/
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>calcite-popover-manager.esri-editor__panel-toolbar,
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>calcite-popover-manager.esri-editor__panel-toolbar:before,
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>calcite-popover-manager.esri-editor__panel-toolbar,
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>calcite-popover-manager.esri-editor__panel-toolbar:before {
+      display: none;
+    }
+
+    /* remove "Edit features" from "Create" */
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>div.esri-editor__panel-content.esri-editor__scroller>div:nth-child(1),
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(2)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>div.esri-editor__panel-content.esri-editor__scroller>div:nth-child(1):before {
+      display: none;
+    }
+
+    /* remove "Create features" from "Edit" */
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>div.esri-editor__panel-content.esri-editor__scroller>div:nth-child(2),
+    #viewDiv>div.esri-view-root>div.esri-ui.calcite-theme-light>div.esri-ui-inner-container.esri-ui-corner-container>div.esri-ui-top-right.esri-ui-corner>div:nth-child(3)>div.esri-expand__container.esri-expand__container--expanded>div.esri-expand__content.esri-expand__content--expanded>div.esri-editor.esri-widget.esri-widget--panel>calcite-flow>calcite-panel>div.esri-editor__panel-content.esri-editor__scroller>div:nth-child(2):before {
+      display: none;
     }
 
     .esri-collapse__icon.esri-icon-layers,
     .esri-collapse__icon.esri-icon-layers:before {
       background-image: [];
       content: "Layers";
-      width: 64px;
-      height: 25px;
+      text-align: center;
+      position: relative;
     }
 
     .esri-collapse__icon.esri-icon-printer,
     .esri-collapse__icon.esri-icon-printer:before {
       background-image: [];
       content: "Print";
-      width: 64px;
-      height: 25px;
+      text-align: center;
+      position: relative;
     }
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
@@ -141,30 +169,29 @@
           group: "top-right"
         });
         view.ui.add(legendExpand, "top-right");
-        if (portal.user.role == "org_user") {
-          const editor = new Editor({
-            view: view,
-            allowedWorkflows: ["create-features"] // note: 'create' was deprecated as of 4.23
-          });
-          editorExpand = new Expand({
-            //expandIconClass: "...",
-            view: view,
-            content: editor,
-            group: "top-right"
-          })
-          view.ui.add(editorExpand, "top-right");
-        } else {
-          const editor = new Editor({
-            view: view,
-          });
-          editorExpand = new Expand({
-            //expandIconClass: "...",
-            view: view,
-            content: editor,
-            group: "top-right"
-          })
-          view.ui.add(editorExpand, "top-right");
-        }
+        const editor = new Editor({
+          view: view,
+          allowedWorkflows: ["create-features"]
+        });
+        editorExpand = new Expand({
+          view: view,
+          content: editor,
+          group: "top-right"
+        })
+        view.ui.add(editorExpand, "top-right");
+        const editor2 = new Editor({
+          view: view,
+          allowedWorkflows: ["update"]
+        });
+        editorExpand2 = new Expand({
+          view: view,
+          content: editor2,
+          group: "top-right"
+        })
+        view.ui.add(editorExpand2, "top-right");
+        editor.when(() => {
+          editor.messages.widgetLabel = [];
+        })
         const layerlist = new LayerList({
           view: view,
         })
